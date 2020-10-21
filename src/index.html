@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Video Player</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/src/css/index.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
+    </head>
+    <body>
+        <script src="/src/index.js" async defer></script>
+
+        <h1>Custom Video Player</h1>
+
+        <video src="../Assets/Videos/Thomas the Dank Engine SFM Music Video.mp4" id="video" class="screen" poster="../Assets/Images/dankengine.jpg" ></video>
+
+        <div class="controls">
+            <button class="btn" id ="play">
+                <i class="fa fa-play fa-2x"</i>
+            </button>
+            <button class="btn" id ="stop">
+                <i class="fa fa-stop fa-2x"></i>
+            </button>
+            <input type="range" id="progress" class="progress" min="0" max="100" stop="0.1" value="0" />
+            <span class="timestamp" id="timestamp">00:00</span>
+        </div>
+
+
+    </body>
+</html>
